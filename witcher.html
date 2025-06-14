@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Witcher - Netflix Clone</title>
+    <link rel="stylesheet" href="witcher.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix image" class="logo" />
+            </a>
+        </div>
+        <div class="navbar-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="tvshows.html" class="nav-link">TV Shows</a>
+            <a href="#" class="nav-link">Movies</a>
+            <a href="#" class="nav-link">New & Popular</a>
+            <a href="#" class="nav-link">My Lists</a>
+        </div>
+        <div class="navbar-right">
+            <i class="fas fa-search" id="searchToggle"></i>
+            <div class="search-container" id="searchContainer">
+                <input type="text" id="searchInput" placeholder="Search movies, series..." />
+                <i class="fas fa-times" id="closeSearch"></i>
+            </div>
+            <i class="fas fa-bell"></i>
+            <img src="Front Man Squid Game.jpg" alt="Profile image" class="profile-icon" />
+        </div>
+    </nav>
+
+    <!-- Witcher Section -->
+    <div class="container">
+        <section class="witcher-section">
+            <div class="witcher-header">
+                <img src="The Witcher.jpg" alt="The Witcher" class="witcher-banner" />
+                <div class="witcher-info">
+                    <h1 class="witcher-title">The Witcher</h1>
+                    <p class="witcher-description">
+                        Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.
+                    </p>
+                    <div class="witcher-buttons">
+                        <button class="btn btn-play"><i class="fa fa-play"></i> Play</button>
+                        <button class="btn btn-more-info"><i class="fa fa-info-circle"></i> More Info</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Season Navigation -->
+            <div class="season-nav">
+                <button class="season-btn active" data-season="1">Season 1</button>
+                <button class="season-btn" data-season="2">Season 2</button>
+                <button class="season-btn" data-season="3">Season 3</button>
+            </div>
+
+            <!-- Episode Lists -->
+            <div class="episode-container">
+                <!-- Season 1 Episodes -->
+                <div class="episode-list season-1 active">
+                    <div class="episode-card">
+                        <img src="witcher_s1e1.jpg" alt="S1E1" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">1. The End's Beginning</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e2.jpg" alt="S1E2" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">2. Four Marks</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e3.jpg" alt="S1E3" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">3. Betrayer Moon</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e4.jpg" alt="S1E4" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">4. Of Banquets, Bastards and Burials</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e5.jpg" alt="S1E5" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">5. Bottled Appetites</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e6.jpg" alt="S1E6" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">6. Rare Species</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e7.jpg" alt="S1E7" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">7. Before a Fall</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s1e8.jpg" alt="S1E8" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">8. Much More</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season 2 Episodes -->
+                <div class="episode-list season-2">
+                    <div class="episode-card">
+                        <img src="witcher_s2e1.jpg" alt="S2E1" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">1. A Grain of Truth</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e2.jpg" alt="S2E2" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">2. Kaer Morhen</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e3.jpg" alt="S2E3" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">3. What Is Lost</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e4.jpg" alt="S2E4" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">4. Redanian Intelligence</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e5.jpg" alt="S2E5" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">5. Turn Your Back</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e6.jpg" alt="S2E6" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">6. Dear Friend...</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e7.jpg" alt="S2E7" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">7. Voleth Meir</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s2e8.jpg" alt="S2E8" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">8. Family</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Season 3 Episodes -->
+                <div class="episode-list season-3">
+                    <div class="episode-card">
+                        <img src="witcher_s3e1.jpg" alt="S3E1" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">1. Shaerrawedd</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e2.jpg" alt="S3E2" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">2. Unbound</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e3.jpg" alt="S3E3" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">3. Reunion</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e4.jpg" alt="S3E4" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">4. The Invitation</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e5.jpg" alt="S3E5" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">5. The Art of Illusion</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e6.jpg" alt="S3E6" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">6. Everybody Has a Plan 'til They Get Punched in the Face</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e7.jpg" alt="S3E7" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">7. Out of the Fire, Into the Frying Pan</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                    <div class="episode-card">
+                        <img src="witcher_s3e8.jpg" alt="S3E8" class="episode-thumbnail" />
+                        <div class="episode-overlay">
+                            <div class="episode-title">8. The Cost of Chaos</div>
+                            <button class="play-episode-btn"><i class="fa fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Audio Description</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <button class="service-code">Service Code</button>
+                <p class="copyright">© 1997-2024 Netflix, Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="witcher.js"></script>
+</body>
+</html>
