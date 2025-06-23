@@ -476,9 +476,27 @@ body {
   content: "👍";
 }
 
-.more-btn::before {
+/* .more-btn::before {
   content: "▾";
   font-size: 18px;
+} */
+
+.control-btn.more-btn {
+  pointer-events: auto;
+  z-index: 10;
+  position: relative;
+}
+
+.control-btn.more-btn a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  position: relative;
+  z-index: 11;
+  pointer-events: auto;
 }
 
 
