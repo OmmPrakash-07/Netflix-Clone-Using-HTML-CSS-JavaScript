@@ -481,6 +481,7 @@ body {
   font-size: 18px;
 }
 
+
 /* Base Overlay Effect */
 .content-card::before {
   content: "";
